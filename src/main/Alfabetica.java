@@ -4,7 +4,7 @@ public class Alfabetica {
         // Recorrer todo el array hasta la penúltima porque
         // la última no tiene siguiente
 
-        for (int i = 0; i < palabra.length() - 1; i++) {
+        for (int i = 0; i < palabra.length() - 1 ; i++) {
             //Si la letra es mayor que la siguiente es que está mal
             if (palabra.charAt(i) > palabra.charAt(i + 1)){
                 return false;
@@ -12,5 +12,9 @@ public class Alfabetica {
         }
         //Si llega hasta aquí es porque está bien
         return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(esAlfabetica("amor"));
     }
 }
